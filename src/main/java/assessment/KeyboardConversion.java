@@ -12,6 +12,7 @@ public class KeyboardConversion {
         Map<Character, Character>  maps = constructMapping(args);
 
         try {
+            //hardcode to read from input.txt
             Reader rd = new BufferedReader(new InputStreamReader(new FileInputStream("input.txt")));
             CharBuffer cb = CharBuffer.allocate(1024);
             while(rd.read(cb) > 0){
@@ -34,7 +35,7 @@ public class KeyboardConversion {
     public static Map<Character, Character> constructMapping(String[] args){
         Map<Character, Character> mapping = new HashMap<Character, Character>();
         List<Character> originals = characterList();
-        List<Character> transformed = characterList();
+        List<Character> transformed = characterList();//use a 1-d array with size 40 to do mapping
 
         for(String arg : args){
             if ("H".equals(arg)){
