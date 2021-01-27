@@ -1,0 +1,14 @@
+How to run:
+I did not see instruction on how to find the "very large" input file, and also I could not test the command line due to time constrain. Therefore, please open this project code (best in intelliJ, as a Maven project) to run.
+
+To feed in test content:
+copy the content of your "very large" file and paste to file input.txt under the project root directory.
+
+To run:
+Right click KeyboardConversion and select "Run KeyboardConversion ...", for the first time, and then click in to Edit Configurations, if you are using IntelliJ, on the upper right corner and add your conversion arguements into the Program Arguments.
+
+
+
+
+About unit testing:
+I have written some test cases to unit test some methods. Couldn't cover all due to time constraints.
